@@ -262,14 +262,14 @@ var player = {
         
         ctx.restore();
 
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "white";
         ctx.font = "24px Arial";
         ctx.textAlign = "start";
-        ctx.fillText("VIDA: " + this.vida,canvas.width-300, 55);
-        ctx.fillText("NIVEL: " + this.nivel,canvas.width-300, 75);
+        ctx.fillText("HP: " + this.vida,canvas.width-300, 55);
+        ctx.fillText("XP: " + this.nivel,canvas.width-300, 75);
         ctx.font = "20px Arial";
-        ctx.fillText("VIDA ENEMIGO: " + world.enemigos[0].vida, canvas.width-300, 95);
-        ctx.fillText("ENEMIGOS RESTANTES: " + world.enemigosRestantes, canvas.width-300, 115);
+        ctx.fillText("ENEMY HP: " + world.enemigos[0].vida, canvas.width-300, 95);
+        ctx.fillText("REMAINING ENEMIES: " + world.enemigosRestantes, canvas.width-300, 115);
     },
 
     crearCajaColision(){

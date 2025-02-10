@@ -53,7 +53,7 @@ var menu = {
         else{
             ctx.font = "40px Arial";
         }
-        ctx.fillText("INSTRUCCIONES", canvas.width / 2, canvas.height - 200);
+        ctx.fillText("INSTRUCTIONS", canvas.width / 2, canvas.height - 200);
 
         if(this.botonInstrucciones){
             ctx.drawImage(graphicAssets.manual.image, 0, 0, canvas.width, canvas.height);
@@ -94,10 +94,10 @@ var end = {
         ctx.textAlign = "center";
         ctx.font = "40px Arial";
         if(player.vida == 0){
-            ctx.fillText("HAS PERDIDO", canvas.width / 2, canvas.height - 275);
+            ctx.fillText("YOU LOOSE", canvas.width / 2, canvas.height - 275);
         }
         else{
-            ctx.fillText("HAS GANADO", canvas.width / 2, canvas.height - 275);
+            ctx.fillText("YOU WIN", canvas.width / 2, canvas.height - 275);
         }
         if(this.botonMenu){
             ctx.font = "45px Arial";
@@ -107,6 +107,6 @@ var end = {
         }
 
            
-        ctx.fillText("VOLVER", canvas.width / 2, canvas.height - 200);       
+        ctx.fillText("BACK", canvas.width / 2, canvas.height - 200);       
     }
 }
